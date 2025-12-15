@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.meal-category {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category-title {
+    font-size: 1.8em;
+    color: #38761d;
+    border-bottom: 3px solid #6aa84f;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meal-option {
+    flex: 1 1 calc(33.333% - 40px); /* Three options per row on large screens */
+    min-width: 280px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.meal-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.meal-option h3 {
+    color: #0c341b;
+    margin-top: 0;
+    font-size: 1.25em;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.ingredients-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.ingredients-list li span {
+    font-weight: bold;
+    color: #6aa84f;
+    min-width: 80px; /* Aligns the calorie counts */
+    text-align: right;
+}
+
+.total-kcal {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 2px solid #ddd;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #38761d;
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.8em;
+    margin-top: 30px;
+}
+
+/* Media Query for smaller screens (e.g., mobile) */
+@media (max-width: 900px) {
+    .options-container {
+        flex-direction: column;
+    }
+
+    .meal-option {
+        flex: 1 1 100%;
+    }
+}
